@@ -8,14 +8,14 @@
   },
   "browser_action":{
     "default_title": "linkedin automation",
-    "default_popup": "test.html",
+    "default_popup": "popup.html",
     "default_icon": "logo.png"
   },
   "content_scripts":[
     {
       "matches":["<all_urls>"],
-      "js":["source.js","source2.js","jquery.js"],
-      "css": ["bootstrap.css"]
+      "js":["library/source.js","library/source2.js","library/jquery.js"],
+      "css": ["library/bootstrap.css"]
     }
   ],
   "permissions":[
