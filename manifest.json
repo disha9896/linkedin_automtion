@@ -1,0 +1,24 @@
+{
+  "name": "linkedin scraping",
+  "description": "temp chrome extension practice",
+  "version": "0.0.1.2",
+  "manifest_version": 2,
+  "icons": {
+    "128": "light-bulb.png"
+  },
+  "browser_action":{
+    "default_title": "linkedin automation",
+    "default_popup": "test.html",
+    "default_icon": "light-bulb.png"
+  },
+  "content_scripts":[
+    {
+      "matches":["<all_urls>"],
+      "js":["source.js","source2.js","jquery.js"],
+      "css": ["bootstrap.css"]
+    }
+  ],
+  "permissions":[
+    "tabs"
+  ]     
+}

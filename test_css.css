@@ -1,0 +1,33 @@
+nav > ul a.nav-item.nav-link,
+nav > ul a.nav-item.nav-link.active
+{
+    padding: 18px 25px;
+    color:black;
+    /* background:rgb(0,119,181); */
+    border-radius:0;
+}
+nav > ul a.nav-item.nav-link.active
+{
+     border-top: 1px solid #fdfdfd !important;
+    border-right : 1px solid #fdfdfd !important;
+    border-left : 1px solid #fdfdfd !important;
+}
+.tab-content{
+    background: #fdfdfd;
+    line-height: 25px;
+    padding:30px 25px;
+}
+
+nav > ul a.nav-item.nav-link:hover,
+nav > ul a.nav-item.nav-link
+{
+    border-bottom: 1px solid #dfdfdf;
+    background-color:white;
+    color:black;
+    border-radius:0;
+    transition:background 0.20s linear;
+}
+nav > ul a.nav-item.nav-link:hover{
+    background-color:rgb(0,119,181);
+    color:white;
+}
