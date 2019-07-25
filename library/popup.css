@@ -1,9 +1,9 @@
-nav > ul a.nav-item.nav-link,
+/* nav > ul a.nav-item.nav-link,
 nav > ul a.nav-item.nav-link.active
 {
     padding: 18px 25px;
     color:black;
-    /* background:rgb(0,119,181); */
+    background:rgb(0,119,181);
     border-radius:0;
 }
 nav > ul a.nav-item.nav-link.active
@@ -30,4 +30,51 @@ nav > ul a.nav-item.nav-link
 nav > ul a.nav-item.nav-link:hover{
     background-color:rgb(0,119,181);
     color:white;
+} */
+html, body{
+    width:350px;
+    height: 550px;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+  }
+.tags
+{
+    border :0;
+    background-color : rgb(0,119,181);
+    box-shadow: none;
+    border-radius : 0px;
+    color:white;
+    outline: none;
+    cursor: pointer;
 }
+.preview{
+    background-color : rgb(0,119,181);
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    margin-left: 65px;
+}
+.preview:active{
+    transform: translateY(4px);
+}
+.bigbtn{
+    background-color : rgb(0,119,181);
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    align-content: center;
+}
+.checkmark {
+    width:15px;
+    height: 15px;
+  }
+  input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  .margin_bottom{
+      margin-bottom: 5px;
+  }

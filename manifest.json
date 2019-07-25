@@ -4,7 +4,7 @@
   "version": "0.0.1.2",
   "manifest_version": 2,
   "icons": {
-    "128": "light-bulb.png"
+    "128": "logo.png"
   },
   "browser_action":{
     "default_title": "linkedin automation",
@@ -14,7 +14,7 @@
   "content_scripts":[
     {
       "matches":["<all_urls>"],
-      "js":["library/source.js","library/source2.js","library/jquery.js"],
+      "js":["library/source.js","library/source2.js","library/jquery.js","library/tag.js"],
       "css": ["library/bootstrap.css"]
     }
   ],

@@ -5,43 +5,67 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="library/jquery.js"></script>
+  <script src="library/tag.js"></script>
+  <link rel="stylesheet" href="library/popup.css">
   <link rel="stylesheet" href="library/bootstrap.css">
   <script src="library/source.js"></script>
   <script src="library/source2.js"></script>
+  <script src="jquery-3.4.1.min.js"></script>
 
-  <style>
-    html, body{
-      width:350px;
-      height: 550px;
-    }
-  </style>
 </head>
 <body >
 
 <div class="container">
   <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
-    <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
-    <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
-    <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
+    <!-- <li class="active"><a data-toggle="tab" href="#home">Home</a></li> -->
+    <li class="active"><a data-toggle="tab" href="#collect">Collect</a></li>
+    <li><a data-toggle="tab" href="#message">Message</a></li>
+    <li><a data-toggle="tab" href="#invite">Invite</a></li>
   </ul>
 
   <div class="tab-content">
-    <div id="home" class="tab-pane fade in active">
-      <h3>HOME</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div id="collect" class="tab-pane fade in active">
+      <br/>
+      <button class="bigbtn" id="toggle" > Upload Excel File </button>          <!-- upload file code -->
+      <div id="uploadDiv">
+        <br/>
+        <input type="file" name="myFile"/>                  
+        <input class="checkmark" type="checkbox" value="data"/> data<br/>            <!-- checkbox data from excel file uploaded-->
+        <input class="checkmark" type="checkbox" value="data"/> data<br/>
+        <input class="checkmark" type="checkbox" value="data"/> data<br/>
+      </div>
+      <hr>
+      <button class="bigbtn" > Collect </button>
+      <br/>
+      <br/>
+      
+      <button class="bigbtn margin_bottom">View Collected</button>
+      <button class="bigbtn margin_bottom">Download</button>
+      <button class="bigbtn margin_bottom">Send Message</button>
+     
     </div>
-    <div id="menu1" class="tab-pane fade">
-      <h3>Menu 1</h3>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div id="message" class="tab-pane fade">
+      <br/>
+      <div class="row">
+      <button class="tags" id="fn"> {Firstname} </button>
+      <button class="tags" id="ln"> {Lastname} </button>
+      <button class="tags" id="comp"> {Company} </button>
+      <button class="tags" id="pos"> {Position} </button>
+      <p>selected tag will be replaced by the real name, lastname, company, position</p>
+      
+      <br/><br/>
+      <textarea class="form-control" rows="5" id="txtbox" placeholder="Enter your message here"></textarea>
+      <br/><br/>
+      <div class="row">
+      <button class="preview" style="align-items: center; width: 80px; height: 30px;"> Preview  </button>
+      <button style="align-items: center; width: 80px; height: 30px;" class="preview"> Save </button>
+      </div>
     </div>
-    <div id="menu2" class="tab-pane fade">
+      
+    </div>
+    <div id="invite" class="tab-pane fade">
       <h3>Menu 2</h3>
       <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-    </div>
-    <div id="menu3" class="tab-pane fade">
-      <h3>Menu 3</h3>
-      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
     </div>
   </div>
 </div>
