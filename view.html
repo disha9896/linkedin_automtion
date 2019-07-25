@@ -1,51 +1,291 @@
+<!-- Name, Designation, Year of Experience, college, Location -->
+
 <html>
-    <head>
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    </head>
-    <body>
 
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
-        <section class="container mt-4 mb-4">
-        <div class="container">
-            <div class="row mb-3">
-                <div class="col-md-6">
-                    <div class="d-flex flex-row border rounded">
-                        <div class="p-0 w-25">
-                            <img src="https://c1.staticflickr.com/3/2862/12328317524_18e52b5972_k.jpg" class="img-thumbnail border-0" />
-                            
-                        </div>
-                        <div class="pl-3 pt-2 pr-2 pb-2 w-75 border-left">
-                                <h4 class="text-primary">Leanne Boulton</h4>
-                                <h5 class="text-info">Photographer</h5>
-                                <ul class="m-0 float-left" style="list-style: none; margin:0; padding: 0">
-                                    <li><i class="fab fa-facebook-square"></i> Facebook</li>
-                                    <li><i class="fab fa-twitter-square"></i> Twitter</li>
-                                </ul>
-                                <p class="text-right m-0"><a href="#" class="btn btn-primary"><i class="far fa-user"></i> View Profile</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="d-flex flex-row border rounded">
-                        <div class="p-0 w-25">
-                            <img src="https://c1.staticflickr.com/3/2862/12328317524_18e52b5972_k.jpg" class="img-thumbnail border-0" />
-                        </div>
-                        <div class="pl-3 pt-2 pr-2 pb-2 w-75 border-left">
-                                <h4 class="text-primary">Leanne Boulton</h4>
-                                <h5 class="text-info">Photographer</h5>
-                                <ul class="m-0 float-left" style="list-style: none; margin:0; padding: 0">
-                                    <li><i class="fab fa-facebook-square"></i> Facebook</li>
-                                    <li><i class="fab fa-twitter-square"></i> Twitter</li>
-                                </ul>
-                                <p class="text-right m-0"><a href="#" class="btn btn-primary"><i class="far fa-user"></i> View Profile</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<head>
+</head>
 
+<body>
+
+    <!-- Header Part -->
+    <!--  -->
+    
+    <script src="library/jquery.js"></script>
+    <link rel="stylesheet" href="library/BS_4/bs.css">
+    <script src="library/BS_4/bs_jquery.js"></script>
+    <script src="library/view.js"></script>
+    <style>
+        .checkbox {
+            height: 20px;
+            width: 20px;
+            margin-top: 50px;
+        }
+    </style>
+    <!--  -->
+    <!-- Header Part -->
+
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#menu1">Inviting Queue</a></li>
+        <li><a data-toggle="tab" href="#menu2">Invited</a></li>
+    </ul>
+
+
+    <a href="#" id='selectAll' class="btn btn-primary"><i class="far fa-user"></i> Select All</a>
+    <a href="#" id='deselectAll' class="btn btn-primary"><i class="far fa-user"></i> Deselect All</a>
+    <a href="#" id='downloads' class="btn btn-primary"><i class="far fa-user"></i> Download CSV</a>
+
+
+    <div class="tab-content">
+        <div id="menu1" class="tab-pane fade in active">
+            <table class="table table-borderless">
+                <thead>
+                    <tr>
+                        <th scope="col">Selected</th>
+                        <th scope="col">Photo</th>
+                        <th scope="col">Information</th>
+                        <th scope="col">Profile Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--  -->
+                    <!--  -->
+                    <!-- Add User Data Here -->
+                    <!--  -->
+                    <!--  -->
+
+                    <tr>
+                        <th scope="row">
+                            <input type='checkbox' class='checkbox'>
+                        </th>
+                        <td>
+                            <img src="https://c1.staticflickr.com/3/2862/12328317524_18e52b5972_k.jpg" height=100
+                                width=100>
+                        </td>
+                        <td>
+                            <ul class="m-0 float-left" style="list-style: none; margin:0; padding: 0">
+                                <li><b>Bruce Wayne</b></li>
+                                <li><b>CEO</b></li>
+                                <li>Wayne Industries</li>
+                                <li>20 years</li>
+                                <li>University of Southern California</li>
+                                <li>California</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <a href="#" class="btn btn-primary"><i class="far fa-user"></i> View Profile</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <input type='checkbox' class='checkbox'>
+                        </th>
+                        <td>
+                            <img src="https://c1.staticflickr.com/3/2862/12328317524_18e52b5972_k.jpg" height=100
+                                width=100>
+                        </td>
+                        <td>
+                            <ul class="m-0 float-left" style="list-style: none; margin:0; padding: 0">
+                                <li><b>Bruce Wayne</b></li>
+                                <li><b>CEO</b></li>
+                                <li>Wayne Industries</li>
+                                <li>20 years</li>
+                                <li>University of Southern California</li>
+                                <li>California</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <a href="#" class="btn btn-primary"><i class="far fa-user"></i> View Profile</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <input type='checkbox' class='checkbox'>
+                        </th>
+                        <td>
+                            <img src="https://c1.staticflickr.com/3/2862/12328317524_18e52b5972_k.jpg" height=100
+                                width=100>
+                        </td>
+                        <td>
+                            <ul class="m-0 float-left" style="list-style: none; margin:0; padding: 0">
+                                <li><b>Bruce Wayne</b></li>
+                                <li><b>CEO</b></li>
+                                <li>Wayne Industries</li>
+                                <li>20 years</li>
+                                <li>University of Southern California</li>
+                                <li>California</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <a href="#" class="btn btn-primary"><i class="far fa-user"></i> View Profile</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <input type='checkbox' class='checkbox'>
+                        </th>
+                        <td>
+                            <img src="https://c1.staticflickr.com/3/2862/12328317524_18e52b5972_k.jpg" height=100
+                                width=100>
+                        </td>
+                        <td>
+                            <ul class="m-0 float-left" style="list-style: none; margin:0; padding: 0">
+                                <li><b>Bruce Wayne</b></li>
+                                <li><b>CEO</b></li>
+                                <li>Wayne Industries</li>
+                                <li>20 years</li>
+                                <li>University of Southern California</li>
+                                <li>California</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <a href="#" class="btn btn-primary"><i class="far fa-user"></i> View Profile</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <input type='checkbox' class='checkbox'>
+                        </th>
+                        <td>
+                            <img src="https://c1.staticflickr.com/3/2862/12328317524_18e52b5972_k.jpg" height=100
+                                width=100>
+                        </td>
+                        <td>
+                            <ul class="m-0 float-left" style="list-style: none; margin:0; padding: 0">
+                                <li><b>Bruce Wayne</b></li>
+                                <li><b>CEO</b></li>
+                                <li>Wayne Industries</li>
+                                <li>20 years</li>
+                                <li>University of Southern California</li>
+                                <li>California</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <a href="#" class="btn btn-primary"><i class="far fa-user"></i> View Profile</a>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
         </div>
-        </section>
-    </body>
+        <div id="menu2" class="tab-pane fade">
+            <table class="table table-borderless">
+                <thead>
+                    <tr>
+                        <th scope="col">Selected</th>
+                        <th scope="col">Photo</th>
+                        <th scope="col">Information</th>
+                        <th scope="col">Profile Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--  -->
+                    <!--  -->
+                    <!-- Add User Data Here -->
+                    <!--  -->
+                    <!--  -->
+
+                    <tr>
+                        <td>
+                            <img src="https://c1.staticflickr.com/3/2862/12328317524_18e52b5972_k.jpg" height=100
+                                width=100>
+                        </td>
+                        <td>
+                            <ul class="m-0 float-left" style="list-style: none; margin:0; padding: 0">
+                                <li><b>Bruce Wayne</b></li>
+                                <li><b>CEO</b></li>
+                                <li>Wayne Industries</li>
+                                <li>20 years</li>
+                                <li>University of Southern California</li>
+                                <li>California</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <a href="#" class="btn btn-primary"><i class="far fa-user"></i> View Profile</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://c1.staticflickr.com/3/2862/12328317524_18e52b5972_k.jpg" height=100
+                                width=100>
+                        </td>
+                        <td>
+                            <ul class="m-0 float-left" style="list-style: none; margin:0; padding: 0">
+                                <li><b>Bruce Wayne</b></li>
+                                <li><b>CEO</b></li>
+                                <li>Wayne Industries</li>
+                                <li>20 years</li>
+                                <li>University of Southern California</li>
+                                <li>California</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <a href="#" class="btn btn-primary"><i class="far fa-user"></i> View Profile</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://c1.staticflickr.com/3/2862/12328317524_18e52b5972_k.jpg" height=100
+                                width=100>
+                        </td>
+                        <td>
+                            <ul class="m-0 float-left" style="list-style: none; margin:0; padding: 0">
+                                <li><b>Bruce Wayne</b></li>
+                                <li><b>CEO</b></li>
+                                <li>Wayne Industries</li>
+                                <li>20 years</li>
+                                <li>University of Southern California</li>
+                                <li>California</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <a href="#" class="btn btn-primary"><i class="far fa-user"></i> View Profile</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://c1.staticflickr.com/3/2862/12328317524_18e52b5972_k.jpg" height=100
+                                width=100>
+                        </td>
+                        <td>
+                            <ul class="m-0 float-left" style="list-style: none; margin:0; padding: 0">
+                                <li><b>Bruce Wayne</b></li>
+                                <li><b>CEO</b></li>
+                                <li>Wayne Industries</li>
+                                <li>20 years</li>
+                                <li>University of Southern California</li>
+                                <li>California</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <a href="#" class="btn btn-primary"><i class="far fa-user"></i> View Profile</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://c1.staticflickr.com/3/2862/12328317524_18e52b5972_k.jpg" height=100
+                                width=100>
+                        </td>
+                        <td>
+                            <ul class="m-0 float-left" style="list-style: none; margin:0; padding: 0">
+                                <li><b>Bruce Wayne</b></li>
+                                <li><b>CEO</b></li>
+                                <li>Wayne Industries</li>
+                                <li>20 years</li>
+                                <li>University of Southern California</li>
+                                <li>California</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <a href="#" class="btn btn-primary"><i class="far fa-user"></i> View Profile</a>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+</body>
+
 </html>
